@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Serif", serif;
+}
+
+/*
+We’ll tweak the styles of the form fields 
+so that the mobile browser does not zoom in on them on focus. 
+We just need them to have a minimum font size of 16px to prevent the zoom.
+We are also setting the width of the input type file to prevent the 
+page on mobile from overflowing and adding a scrollbar.
+*/
+select.form-control,
+textarea.form-control,
+input.form-control {
+  font-size: 16px;
+}
+input[type=file] {
+  width: 100%;
+}
